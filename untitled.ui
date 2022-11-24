@@ -69,7 +69,7 @@
      </size>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="main_page">
      <widget class="QPushButton" name="entry_btn">
@@ -132,7 +132,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>PushButton</string>
+       <string>Зарегестрироваться</string>
       </property>
      </widget>
      <widget class="QLineEdit" name="reg_login_edit">
@@ -202,6 +202,24 @@
       </property>
       <property name="text">
        <string>Пароль</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="back_btn_reg">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Назад</string>
       </property>
      </widget>
     </widget>
@@ -283,6 +301,24 @@
       </property>
       <property name="text">
        <string>Вход:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="back_btn_entry">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Назад</string>
       </property>
      </widget>
     </widget>
