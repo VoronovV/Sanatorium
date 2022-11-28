@@ -39,7 +39,9 @@ class setup(QtWidgets.QMainWindow):
         password_2 = self.ui.reg_pass_edit_2.text()
         if password == password_2:
             add_in_users_table(self.con, login, password)
-            print("success")
+            self.ui.registration_page.hide()
+            self.ui.table_page.show()
+
 
     def back_in_main_page(self):
         self.ui.registration_page.hide()
