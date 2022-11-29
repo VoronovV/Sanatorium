@@ -32,21 +32,83 @@ class Ui_MainWindow(object):
         self.main_page = QtWidgets.QWidget()
         self.main_page.setObjectName("main_page")
         self.entry_btn = QtWidgets.QPushButton(self.main_page)
-        self.entry_btn.setGeometry(QtCore.QRect(300, 160, 111, 71))
+        self.entry_btn.setGeometry(QtCore.QRect(255, 262, 200, 30))
+        self.entry_btn.setMinimumSize(QtCore.QSize(200, 30))
+        self.entry_btn.setMaximumSize(QtCore.QSize(200, 30))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat")
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setItalic(False)
+        font.setWeight(75)
+        self.entry_btn.setFont(font)
+        self.entry_btn.setStyleSheet("\n"
+"box-sizing: border-box;\n"
+"\n"
+"position: absolute;\n"
+"width: 200px;\n"
+"height: 30px;\n"
+"left: 255px;\n"
+"top: 262px;\n"
+"\n"
+"background: #006F48;\n"
+"border: 1px solid #006F48;\n"
+"border-radius: 10px;\n"
+"color: #FFFFFF;\n"
+"font-family: \'Montserrat\';\n"
+"font-style: normal;\n"
+"font-weight: 600;\n"
+"font-size: 11px;\n"
+"line-height: 145%;")
         self.entry_btn.setObjectName("entry_btn")
         self.regisration_btn = QtWidgets.QPushButton(self.main_page)
-        self.regisration_btn.setGeometry(QtCore.QRect(300, 260, 111, 71))
+        self.regisration_btn.setGeometry(QtCore.QRect(255, 312, 200, 30))
+        self.regisration_btn.setMinimumSize(QtCore.QSize(200, 30))
+        self.regisration_btn.setMaximumSize(QtCore.QSize(200, 30))
+        self.regisration_btn.setStyleSheet("\n"
+"box-sizing: border-box;\n"
+"\n"
+"position: absolute;\n"
+"width: 200px;\n"
+"height: 30px;\n"
+"left: 255px;\n"
+"top: 262px;\n"
+"\n"
+"background: #006F48;\n"
+"border: 1px solid #006F48;\n"
+"border-radius: 10px;\n"
+"color: #FFFFFF;\n"
+"font-family: \'Montserrat\';\n"
+"font-style: normal;\n"
+"font-weight: 600;\n"
+"font-size: 11px;\n"
+"line-height: 145%;")
         self.regisration_btn.setObjectName("regisration_btn")
+        self.label_9 = QtWidgets.QLabel(self.main_page)
+        self.label_9.setGeometry(QtCore.QRect(123, 157, 453, 35))
+        self.label_9.setMinimumSize(QtCore.QSize(453, 35))
+        self.label_9.setMaximumSize(QtCore.QSize(453, 35))
+        self.label_9.setStyleSheet("\n"
+"\n"
+"\n"
+"\n"
+"font-family: \'Montserrat\';\n"
+"font-style: normal;\n"
+"font-weight: 700;\n"
+"font-size: 24px;\n"
+"line-height: 145%;")
+        self.label_9.setObjectName("label_9")
         self.regisration_btn.raise_()
         self.entry_btn.raise_()
+        self.label_9.raise_()
         self.stackedWidget.addWidget(self.main_page)
         self.table_page = QtWidgets.QWidget()
         self.table_page.setObjectName("table_page")
         self.tableWidget = QtWidgets.QTableWidget(self.table_page)
-        self.tableWidget.setGeometry(QtCore.QRect(35, 61, 641, 221))
+        self.tableWidget.setGeometry(QtCore.QRect(35, 61, 641, 341))
         self.tableWidget.setStyleSheet("")
         self.tableWidget.setObjectName("tableWidget")
-        self.tableWidget.setColumnCount(6)
+        self.tableWidget.setColumnCount(8)
         self.tableWidget.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(0, item)
@@ -60,77 +122,187 @@ class Ui_MainWindow(object):
         self.tableWidget.setHorizontalHeaderItem(4, item)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(5, item)
-        self.stackedWidget.addWidget(self.table_page)
-        self.registration_page = QtWidgets.QWidget()
-        self.registration_page.setObjectName("registration_page")
-        self.label_4 = QtWidgets.QLabel(self.registration_page)
-        self.label_4.setGeometry(QtCore.QRect(280, 100, 201, 41))
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(6, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(7, item)
+        self.back_btn_table = QtWidgets.QPushButton(self.table_page)
+        self.back_btn_table.setGeometry(QtCore.QRect(600, 20, 56, 17))
+        self.back_btn_table.setObjectName("back_btn_table")
+        self.pushButton_2 = QtWidgets.QPushButton(self.table_page)
+        self.pushButton_2.setGeometry(QtCore.QRect(10, 20, 56, 17))
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.pushButton_3 = QtWidgets.QPushButton(self.table_page)
+        self.pushButton_3.setGeometry(QtCore.QRect(80, 20, 56, 17))
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.pushButton_4 = QtWidgets.QPushButton(self.table_page)
+        self.pushButton_4.setGeometry(QtCore.QRect(150, 20, 56, 17))
+        self.pushButton_4.setObjectName("pushButton_4")
+        self.label_8 = QtWidgets.QLabel(self.table_page)
+        self.label_8.setGeometry(QtCore.QRect(230, 20, 291, 31))
         font = QtGui.QFont()
         font.setPointSize(16)
         font.setBold(True)
         font.setWeight(75)
+        self.label_8.setFont(font)
+        self.label_8.setObjectName("label_8")
+        self.lineEdit = QtWidgets.QLineEdit(self.table_page)
+        self.lineEdit.setGeometry(QtCore.QRect(270, 430, 171, 21))
+        self.lineEdit.setObjectName("lineEdit")
+        self.pushButton = QtWidgets.QPushButton(self.table_page)
+        self.pushButton.setGeometry(QtCore.QRect(200, 430, 56, 17))
+        self.pushButton.setObjectName("pushButton")
+        self.stackedWidget.addWidget(self.table_page)
+        self.registration_page = QtWidgets.QWidget()
+        self.registration_page.setObjectName("registration_page")
+        self.label_4 = QtWidgets.QLabel(self.registration_page)
+        self.label_4.setGeometry(QtCore.QRect(265, 123, 169, 35))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat")
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setItalic(False)
+        font.setWeight(87)
         self.label_4.setFont(font)
+        self.label_4.setStyleSheet("font-family: \'Montserrat\';\n"
+"font-style: normal;\n"
+"font-weight: 700;\n"
+"font-size: 24px;\n"
+"line-height: 145%;")
+        self.label_4.setAlignment(QtCore.Qt.AlignCenter)
         self.label_4.setObjectName("label_4")
         self.reg_btn_reg_page = QtWidgets.QPushButton(self.registration_page)
-        self.reg_btn_reg_page.setGeometry(QtCore.QRect(280, 320, 181, 41))
+        self.reg_btn_reg_page.setGeometry(QtCore.QRect(255, 348, 200, 30))
+        self.reg_btn_reg_page.setMinimumSize(QtCore.QSize(200, 30))
+        self.reg_btn_reg_page.setMaximumSize(QtCore.QSize(200, 30))
+        self.reg_btn_reg_page.setStyleSheet("background: #006F48;\n"
+"border: 1px solid #006F48;\n"
+"border-radius: 10px;\n"
+"font-family: \'Montserrat\';\n"
+"font-style: normal;\n"
+"font-weight: 600;\n"
+"font-size: 11px;\n"
+"line-height: 145%;\n"
+"color: #FFFFFF;")
         self.reg_btn_reg_page.setObjectName("reg_btn_reg_page")
         self.reg_login_edit = QtWidgets.QLineEdit(self.registration_page)
-        self.reg_login_edit.setGeometry(QtCore.QRect(280, 180, 181, 21))
+        self.reg_login_edit.setGeometry(QtCore.QRect(255, 198, 200, 30))
+        self.reg_login_edit.setMinimumSize(QtCore.QSize(200, 30))
+        self.reg_login_edit.setMaximumSize(QtCore.QSize(200, 30))
+        self.reg_login_edit.setStyleSheet("border: 1px solid #006F48;\n"
+"border-radius: 10px;")
         self.reg_login_edit.setObjectName("reg_login_edit")
         self.reg_pass_edit = QtWidgets.QLineEdit(self.registration_page)
-        self.reg_pass_edit.setGeometry(QtCore.QRect(280, 230, 181, 20))
+        self.reg_pass_edit.setGeometry(QtCore.QRect(255, 248, 200, 30))
+        self.reg_pass_edit.setMinimumSize(QtCore.QSize(200, 30))
+        self.reg_pass_edit.setMaximumSize(QtCore.QSize(200, 30))
+        self.reg_pass_edit.setStyleSheet("border: 1px solid #006F48;\n"
+"border-radius: 10px;")
         self.reg_pass_edit.setObjectName("reg_pass_edit")
-        self.label_5 = QtWidgets.QLabel(self.registration_page)
-        self.label_5.setGeometry(QtCore.QRect(280, 160, 121, 16))
-        self.label_5.setObjectName("label_5")
-        self.label_6 = QtWidgets.QLabel(self.registration_page)
-        self.label_6.setGeometry(QtCore.QRect(280, 210, 131, 16))
-        self.label_6.setObjectName("label_6")
         self.reg_pass_edit_2 = QtWidgets.QLineEdit(self.registration_page)
-        self.reg_pass_edit_2.setGeometry(QtCore.QRect(280, 280, 181, 20))
+        self.reg_pass_edit_2.setGeometry(QtCore.QRect(255, 298, 200, 30))
+        self.reg_pass_edit_2.setMinimumSize(QtCore.QSize(200, 30))
+        self.reg_pass_edit_2.setMaximumSize(QtCore.QSize(200, 30))
+        self.reg_pass_edit_2.setStyleSheet("border: 1px solid #006F48;\n"
+"border-radius: 10px;")
         self.reg_pass_edit_2.setObjectName("reg_pass_edit_2")
-        self.label_7 = QtWidgets.QLabel(self.registration_page)
-        self.label_7.setGeometry(QtCore.QRect(280, 260, 161, 16))
-        self.label_7.setObjectName("label_7")
         self.back_btn_reg = QtWidgets.QPushButton(self.registration_page)
-        self.back_btn_reg.setGeometry(QtCore.QRect(30, 30, 91, 31))
+        self.back_btn_reg.setGeometry(QtCore.QRect(30, 30, 25, 25))
+        self.back_btn_reg.setMinimumSize(QtCore.QSize(25, 25))
+        self.back_btn_reg.setMaximumSize(QtCore.QSize(25, 25))
         font = QtGui.QFont()
         font.setPointSize(12)
         self.back_btn_reg.setFont(font)
+        self.back_btn_reg.setStyleSheet("border-radius: 10px;\n"
+"")
+        self.back_btn_reg.setText("")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("icons8-стрелка-влево-в-круге-2-50.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.back_btn_reg.setIcon(icon)
+        self.back_btn_reg.setIconSize(QtCore.QSize(25, 25))
         self.back_btn_reg.setObjectName("back_btn_reg")
         self.stackedWidget.addWidget(self.registration_page)
         self.entry_page = QtWidgets.QWidget()
         self.entry_page.setObjectName("entry_page")
         self.entry_btn_entry_page = QtWidgets.QPushButton(self.entry_page)
-        self.entry_btn_entry_page.setGeometry(QtCore.QRect(280, 280, 181, 51))
+        self.entry_btn_entry_page.setGeometry(QtCore.QRect(255, 322, 200, 30))
+        self.entry_btn_entry_page.setStyleSheet("background: #006F48;\n"
+"border: 1px solid #006F48;\n"
+"border-radius: 10px;\n"
+"font-family: \'Montserrat\';\n"
+"font-style: normal;\n"
+"font-weight: 600;\n"
+"font-size: 11px;\n"
+"line-height: 145%;\n"
+"color: #FFFFFF;\n"
+"")
         self.entry_btn_entry_page.setObjectName("entry_btn_entry_page")
         self.entry_login_edit = QtWidgets.QLineEdit(self.entry_page)
-        self.entry_login_edit.setGeometry(QtCore.QRect(280, 180, 181, 20))
+        self.entry_login_edit.setGeometry(QtCore.QRect(255, 222, 200, 30))
+        self.entry_login_edit.setMinimumSize(QtCore.QSize(200, 30))
+        self.entry_login_edit.setMaximumSize(QtCore.QSize(200, 30))
+        self.entry_login_edit.setStyleSheet("border: 1px solid #006F48;\n"
+"border-radius: 10px;")
+        self.entry_login_edit.setText("")
         self.entry_login_edit.setObjectName("entry_login_edit")
         self.entry_pass_edit = QtWidgets.QLineEdit(self.entry_page)
-        self.entry_pass_edit.setGeometry(QtCore.QRect(280, 230, 181, 20))
+        self.entry_pass_edit.setGeometry(QtCore.QRect(255, 272, 200, 30))
+        self.entry_pass_edit.setMinimumSize(QtCore.QSize(200, 30))
+        self.entry_pass_edit.setMaximumSize(QtCore.QSize(200, 30))
+        self.entry_pass_edit.setStyleSheet("border: 1px solid #006F48;\n"
+"border-radius: 10px;\n"
+"")
         self.entry_pass_edit.setObjectName("entry_pass_edit")
-        self.label_2 = QtWidgets.QLabel(self.entry_page)
-        self.label_2.setGeometry(QtCore.QRect(280, 160, 81, 16))
-        self.label_2.setObjectName("label_2")
-        self.label_3 = QtWidgets.QLabel(self.entry_page)
-        self.label_3.setGeometry(QtCore.QRect(280, 210, 71, 16))
-        self.label_3.setObjectName("label_3")
         self.label = QtWidgets.QLabel(self.entry_page)
-        self.label.setGeometry(QtCore.QRect(280, 90, 101, 31))
+        self.label.setGeometry(QtCore.QRect(318, 147, 65, 35))
+        self.label.setMinimumSize(QtCore.QSize(65, 35))
+        self.label.setMaximumSize(QtCore.QSize(65, 35))
         font = QtGui.QFont()
-        font.setPointSize(16)
+        font.setFamily("Montserrat")
+        font.setPointSize(-1)
         font.setBold(True)
-        font.setWeight(75)
+        font.setItalic(False)
+        font.setWeight(87)
         self.label.setFont(font)
+        self.label.setStyleSheet("font-family: \'Montserrat\';\n"
+"font-style: normal;\n"
+"font-weight: 700;\n"
+"font-size: 24px;\n"
+"line-height: 145%;")
         self.label.setObjectName("label")
         self.back_btn_entry = QtWidgets.QPushButton(self.entry_page)
-        self.back_btn_entry.setGeometry(QtCore.QRect(30, 30, 91, 31))
+        self.back_btn_entry.setGeometry(QtCore.QRect(20, 20, 25, 25))
+        self.back_btn_entry.setMinimumSize(QtCore.QSize(25, 25))
+        self.back_btn_entry.setMaximumSize(QtCore.QSize(25, 25))
         font = QtGui.QFont()
         font.setPointSize(12)
         self.back_btn_entry.setFont(font)
+        self.back_btn_entry.setStyleSheet("border-radius: 10px;\n"
+"\n"
+"")
+        self.back_btn_entry.setText("")
+        self.back_btn_entry.setIcon(icon)
+        self.back_btn_entry.setIconSize(QtCore.QSize(25, 25))
         self.back_btn_entry.setObjectName("back_btn_entry")
         self.stackedWidget.addWidget(self.entry_page)
+        self.Menu_page = QtWidgets.QWidget()
+        self.Menu_page.setObjectName("Menu_page")
+        self.clients_btn = QtWidgets.QPushButton(self.Menu_page)
+        self.clients_btn.setGeometry(QtCore.QRect(280, 160, 131, 41))
+        self.clients_btn.setObjectName("clients_btn")
+        self.offices_btn = QtWidgets.QPushButton(self.Menu_page)
+        self.offices_btn.setGeometry(QtCore.QRect(285, 216, 121, 41))
+        self.offices_btn.setObjectName("offices_btn")
+        self.rooms_btn = QtWidgets.QPushButton(self.Menu_page)
+        self.rooms_btn.setGeometry(QtCore.QRect(280, 270, 121, 51))
+        self.rooms_btn.setObjectName("rooms_btn")
+        self.exit_btn = QtWidgets.QPushButton(self.Menu_page)
+        self.exit_btn.setGeometry(QtCore.QRect(285, 356, 101, 21))
+        self.exit_btn.setObjectName("exit_btn")
+        self.employees_btn = QtWidgets.QPushButton(self.Menu_page)
+        self.employees_btn.setGeometry(QtCore.QRect(280, 110, 131, 41))
+        self.employees_btn.setObjectName("employees_btn")
+        self.stackedWidget.addWidget(self.Menu_page)
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -140,8 +312,9 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.entry_btn.setText(_translate("MainWindow", "Вход"))
+        self.entry_btn.setText(_translate("MainWindow", "Войти"))
         self.regisration_btn.setText(_translate("MainWindow", "Регистрация"))
+        self.label_9.setText(_translate("MainWindow", "Программное средство санатория"))
         item = self.tableWidget.horizontalHeaderItem(0)
         item.setText(_translate("MainWindow", "Фамилия"))
         item = self.tableWidget.horizontalHeaderItem(1)
@@ -154,17 +327,26 @@ class Ui_MainWindow(object):
         item.setText(_translate("MainWindow", "Дата рождения"))
         item = self.tableWidget.horizontalHeaderItem(5)
         item.setText(_translate("MainWindow", "Прописка"))
+        item = self.tableWidget.horizontalHeaderItem(6)
+        item.setText(_translate("MainWindow", "Редактирование"))
+        item = self.tableWidget.horizontalHeaderItem(7)
+        item.setText(_translate("MainWindow", "Удаление"))
+        self.back_btn_table.setText(_translate("MainWindow", "Назад"))
+        self.pushButton_2.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_3.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_4.setText(_translate("MainWindow", "PushButton"))
+        self.label_8.setText(_translate("MainWindow", "Программное средство санатория"))
+        self.pushButton.setText(_translate("MainWindow", "PushButton"))
         self.label_4.setText(_translate("MainWindow", "Регистрация"))
         self.reg_btn_reg_page.setText(_translate("MainWindow", "Зарегестрироваться"))
-        self.label_5.setText(_translate("MainWindow", "Логин"))
-        self.label_6.setText(_translate("MainWindow", "Пароль"))
-        self.label_7.setText(_translate("MainWindow", "Пароль"))
-        self.back_btn_reg.setText(_translate("MainWindow", "Назад"))
         self.entry_btn_entry_page.setText(_translate("MainWindow", "Войти"))
-        self.label_2.setText(_translate("MainWindow", "Логин"))
-        self.label_3.setText(_translate("MainWindow", "Пароль"))
-        self.label.setText(_translate("MainWindow", "Вход:"))
-        self.back_btn_entry.setText(_translate("MainWindow", "Назад"))
+        self.label.setText(_translate("MainWindow", "Вход"))
+        self.clients_btn.setText(_translate("MainWindow", "Клиенты"))
+        self.offices_btn.setText(_translate("MainWindow", "Кабинеты"))
+        self.rooms_btn.setText(_translate("MainWindow", "Комнаты"))
+        self.exit_btn.setText(_translate("MainWindow", "Во вход"))
+        self.employees_btn.setText(_translate("MainWindow", "Сотрудники"))
+import 123_rc
 
 
 if __name__ == "__main__":

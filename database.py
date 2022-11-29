@@ -28,4 +28,4 @@ def login_in_users_table(con, login, password):
     if len(obj.execute("select login, password from users where login = ? and password = ?", (login, password)).fetchall()) > 0:
         return True
     else:
-        print("not found")
+        return False
